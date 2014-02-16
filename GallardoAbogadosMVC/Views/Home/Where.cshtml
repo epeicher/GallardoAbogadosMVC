@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Dónde estamos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Dónde estamos</h2>
+
+<div class="row">
+    <address class="col-md-2">
+        Calle Maestranza, 8, Portal 2º (Oficinas)<br />
+        29016 Málaga<br />
+    </address>
+    <div id="map_canvas" class="col-md-10"></div>
+</div>
+
+@section scripts {
+    <script>
+        function initialize() {
+            var map_canvas = document.getElementById('map_canvas');
+            var myLatlng = new google.maps.LatLng(36.71972, -4.41031);
+            var map_options = {
+                center: myLatlng,
+                zoom: 14,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(map_canvas, map_options)
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Gallardo Abogados'
+            });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+}

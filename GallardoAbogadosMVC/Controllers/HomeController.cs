@@ -15,15 +15,23 @@ namespace GallardoAbogadosMVC.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            return View();
+        }
 
+        public ActionResult Who()
+        {
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Tendremos el gusto de atenderles en:";
 
+            return View();
+        }
+
+        public ActionResult Where()
+        {
             return View();
         }
     }

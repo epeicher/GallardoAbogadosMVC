@@ -22,9 +22,9 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                     <li>@Html.ActionLink("Servicios", "About", "Home")</li>
-                    <li>@Html.ActionLink("Quienes somos", "Who", "Home")</li>
+                    <li>@Html.ActionLink("Quiénes somos", "Who", "Home")</li>
                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Situacion", "Location", "Home")</li>
+                    <li>@Html.ActionLink("Situación", "Where", "Home")</li>
                 </ul>
             </div>
         </div>
@@ -34,16 +34,19 @@
             <h1>Gallardo Abogados</h1>
             <p class="lead">Despacho profesional</p>
         </div>
-        @RenderBody()
+        <div id="inner-body">
+            @RenderBody()
+        </div>
         <hr />
         <footer>
             <p>Gallardo Abogados</p>
-            <p><strong>Teléfono:</strong> 555 24 24 24</p>
+            <p><strong>Teléfono:</strong> 952 22 63 35</p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

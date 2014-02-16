@@ -15,6 +15,9 @@
     background-color: #f8f8f8;
 }
 
+#inner-body{
+    /*background-color: wheat;*/
+}
 .jumbotron{
     background: url(/Content/images/Jumbo.jpg) no-repeat center center fixed;
 }
@@ -25,6 +28,11 @@
 
 .navbar-nav li a {
     line-height: 60px;
+}
+
+#map_canvas {
+    width: 600px;
+    height: 400px;
 }
 
 /* Set padding to keep content from hitting the edges */
