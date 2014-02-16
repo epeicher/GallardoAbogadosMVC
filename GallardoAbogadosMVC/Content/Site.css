@@ -19,7 +19,7 @@
     /*background-color: wheat;*/
 }
 .jumbotron{
-    background: url(/Content/images/Jumbo.jpg) no-repeat center center fixed;
+    background: url(/Content/images/JumboBig.jpg) no-repeat center center;
 }
 
 #header h1, #header p{

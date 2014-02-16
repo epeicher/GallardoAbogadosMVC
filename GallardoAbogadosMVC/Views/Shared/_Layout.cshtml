@@ -16,7 +16,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="/Content/images/Icon_100.jpg" class="navbar-brand" />
+                <a href="/Home/Index">
+                    <img src="/Content/images/Icon_100.jpg" class="navbar-brand" />
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -29,16 +31,16 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        <div id="header" class="jumbotron">
+    <div class="body-content">
+        <div id="header" class="jumbotron container">
             <h1>Gallardo Abogados</h1>
             <p class="lead">Despacho profesional</p>
         </div>
-        <div id="inner-body">
+        <div id="inner-body" class="container">
             @RenderBody()
         </div>
         <hr />
-        <footer>
+        <footer class="container">
             <p>Gallardo Abogados</p>
             <p><strong>Teléfono:</strong> 952 22 63 35</p>
         </footer>
